@@ -1,51 +1,26 @@
-# REACT CRUD EXAMPLE - modern version
+# Build a Node.js CRUD App Using React and FeathersJS
 
-## Introduction
+Michael Wanyoike walks you through building a full-stack JavaScript CRUD contact list application, using Node, FeathersJS and MongoDB for the back-end API.
 
-This a basic crud react-hooks-context-feathers application for managing contacts. It currently uses MongoDB for the database and Feathers for the REST API server.
+This is an updated version of an older project that is now in legacy mode: https://github.com/brandiqa/redux-crud-app.
 
-See tutorial: https://www.sitepoint.com/crud-app-react-redux-feathersjs/
+## Requirements
 
-This is an updated version of the older project that is now in legacy mode: https://github.com/brandiqa/redux-crud-app.
+* [Node.js](http://nodejs.org/) (v12+)
+* [MongoDB](https://www.mongodb.org/) (v4.2+)
+* [Yarn](https://yarnpkg.com/en/) package manager
 
-##  How to install
 
-The following instructions assume you have installed Yarn.
+## Installation Steps
 
-```bash
-git clone git@github.com:brandiqa/react-crud-example.git
-cd react-crud-example
-
-# Install frontend dependencies
-yarn install
-
-# Install backend dependencies
-cd backend
-yarn install
-```
-
-## How to run
-Ensure you have mongodb installed in your system and that it is running.
-
-### Start Feathers backend server
-Start the backend server first:
-
-```bash
-cd react-crud-example/backend
-yarn start
-```
-
-This will launch the backend server at localhost:3030. If all is working well, you should be able to access the url http://localhost:3030/contacts from your Browser, Postman or Insomnia.
-
-### Start `create-react-app` server
-Open a separate terminal to start the client:
-
-```bash
-cd react-crud-example
-yarn start
-```
-
-Your default web browser will be launched automatically with the url http://localhost:3000
+1. Clone repo
+2. Run `yarn install`
+3. Change into the `backend` directory
+4. Run `yarn install`
+5. Ensure MongoDB is running
+6. From the `backend` directory run `yarn start` — this starts the Feathers API server
+7. From the project root run `yarn start` — this starts the `create-react-app` server
+8. Your default web browser will be launched automatically with the URL [http://localhost:3000/](http://localhost:3000/)
 
 ## License
 

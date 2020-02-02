@@ -82,7 +82,7 @@
     socket.io "^2.3.0"
     uberproto "^2.0.4"
 
-"@feathersjs/transport-commons@^4.5.0", "@feathersjs/transport-commons@^4.5.1":
+"@feathersjs/transport-commons@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.5.1.tgz#55bd9bb298fe0d3f9ab612855065be84013827c4"
   integrity sha512-qgTeluk/+8CsSySrp138RLJbToik/lxLWjrVugpWku1JIYkWc9/IqvevH6B4MZrcNkS9lEwj7WAZq/AYOjiUqw==
@@ -131,9 +131,9 @@
   integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
 
 "@types/node@*":
-  version "13.5.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.5.3.tgz#37f1f539b7535b9fb4ef77d59db1847a837b7f17"
-  integrity sha512-ZPnWX9PW992w6DUsz3JIXHaSb5v7qmKCVzC3km6SxcDGxk7zmLfYaCJTbktIa5NeywJkkZDhGldKqDIvC5DRrA==
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.0.tgz#b417deda18cf8400f278733499ad5547ed1abec4"
+  integrity sha512-GnZbirvmqZUzMgkFn70c74OQpTTUcCzlhQliTzYjQMqg+hVKcDnxdL19Ne3UdYzdMA/+W3eb646FWn/ZaT1NfQ==
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -1884,9 +1884,9 @@ mongoose-type-email@^1.0.12:
     cryptiles "^4.1.2"
 
 mongoose@^5.7.13:
-  version "5.8.10"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.8.10.tgz#c06c6a7e171c8b0706bf85da7f98e478fa6f9822"
-  integrity sha512-3sRiZhtMIB4egqxWbry23C+xX87kQ0aTvPtMXxWXCBGfCRkXMJl/CLiftYcle/JPy09Lv5u+ZCBpIJUgwDMtxw==
+  version "5.8.11"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.8.11.tgz#4b3813e55d33928dcc4a2c5cf4b8a76041192861"
+  integrity sha512-Yz0leNEJsAtNtMTxTDEadacLWt58gaVeBVL3c1Z3vaBoc159aJqlf+T8jaL9mAdBxKndF5YWhh6Q719xac7cjA==
   dependencies:
     bson "~1.1.1"
     kareem "2.3.1"
@@ -1964,7 +1964,7 @@ node-environment-flags@1.0.5:
     object.getownpropertydescriptors "^2.0.3"
     semver "^5.7.0"
 
-nodemon@^2.0.2:
+nodemon@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.2.tgz#9c7efeaaf9b8259295a97e5d4585ba8f0cbe50b0"
   integrity sha512-GWhYPMfde2+M0FsHnggIHXTqPDHXia32HRhh6H0d75Mt9FKUoCBvumNHr7LdrpPBTKxsWmIEOjoN+P4IU6Hcaw==
