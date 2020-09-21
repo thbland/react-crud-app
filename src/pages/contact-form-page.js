@@ -4,12 +4,13 @@ import ContactForm from '../components/contact-form';
 import { flashErrorMessage } from '../components/flash-message';
 import { ContactContext } from '../context/contact-context';
 
-export default function ContactFormPage({ match }) {
+const ContactFormPage = ({ match }) => {
   const [state, dispatch] = useContext(ContactContext);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const { _id } = match.params; // Grab URL _id
+
     if (_id) {
       const fetchData = async () => {
         try {
@@ -41,3 +42,5 @@ export default function ContactFormPage({ match }) {
     </div>
   );
 }
+
+export default ContactFormPage;

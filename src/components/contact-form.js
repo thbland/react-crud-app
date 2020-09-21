@@ -7,7 +7,7 @@ import { Redirect } from 'react-router-dom';
 import { ContactContext } from '../context/contact-context';
 import { flashErrorMessage } from './flash-message';
 
-export default function ContactForm({ contact }) {
+const ContactForm = ({contact}) => {
   const [state, dispatch] = useContext(ContactContext);
   const [redirect, setRedirect] = useState(false);
   const { register, errors, handleSubmit } = useForm({
@@ -58,8 +58,8 @@ export default function ContactForm({ contact }) {
   return (
     <Grid centered columns={2}>
       <Grid.Column>
-        <h1 style={{ marginTop: '1em' }}>
-          {contact._id ? 'Edit Contact' : 'Add New Contact'}
+        <h1 style={{ marginTop: "1em" }}>
+          {contact._id ? "Edit Contact" : "Add New Contact"}
         </h1>
         <Form onSubmit={handleSubmit(onSubmit)} loading={state.loading}>
           <Form.Group widths="equal">
@@ -156,3 +156,5 @@ export default function ContactForm({ contact }) {
     </Grid>
   );
 }
+
+export default ContactForm;

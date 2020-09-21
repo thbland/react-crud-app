@@ -1,13 +1,13 @@
 import React from 'react';
-import { Card, Button, Icon } from 'semantic-ui-react';
+import  axios  from  'axios';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { ContactContext } from '../context/contact-context';
-import { flashErrorMessage } from './flash-message';
+import { Card, Button, Icon } from 'semantic-ui-react';
+import  { ContactContext }  from  '../context/contact-context';
+import  { flashErrorMessage }  from  './flash-message';
 
-const { useContext } = React;
+const  { useContext }  =  React;
 
-export default function ContactCard({ contact }) {
+const ContactCard = ({ contact }) => {
   // eslint-disable-next-line no-unused-vars
   const [state, dispatch] = useContext(ContactContext);
 
@@ -58,3 +58,5 @@ export default function ContactCard({ contact }) {
     </Card>
   );
 }
+
+export default ContactCard;

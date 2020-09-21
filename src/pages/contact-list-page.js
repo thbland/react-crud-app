@@ -2,9 +2,9 @@ import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
 import ContactList from '../components/contact-list';
 import { ContactContext } from '../context/contact-context';
-import FlashMessage, { flashErrorMessage } from '../components/flash-message';
+import { FlashMessage, flashErrorMessage } from '../components/flash-message';
 
-export default function ContactListPage() {
+const ContactListPage = () => {
   const [state, dispatch] = useContext(ContactContext);
 
   useEffect(() => {
@@ -30,3 +30,5 @@ export default function ContactListPage() {
     </div>
   );
 }
+
+export default ContactListPage;

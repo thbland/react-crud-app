@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { ContactContextProvider } from './context/contact-context';
 import App from './App';
+
 import 'fomantic-ui-css/semantic.min.css';
 import './index.css';
-import { ContactContextProvider } from './context/contact-context';
 
 ReactDOM.render(
   <ContactContextProvider>
@@ -12,5 +13,5 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </ContactContextProvider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

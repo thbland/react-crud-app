@@ -10,19 +10,6 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'FETCH_CONTACTS': {
-      return {
-        ...state,
-        contacts: action.payload,
-        contact: {},
-      };
-    }
-    case 'FLASH_MESSAGE': {
-      return {
-        ...state,
-        message: action.payload,
-      };
-    }
     case 'CREATE_CONTACT': {
       return {
         ...state,
@@ -34,11 +21,16 @@ function reducer(state, action) {
         },
       };
     }
+    case 'FETCH_CONTACTS': {
+      return {
+        ...state,
+        contacts: action.payload,
+      };
+    }
     case 'FETCH_CONTACT': {
       return {
         ...state,
         contact: action.payload,
-        message: {},
       };
     }
     case 'UPDATE_CONTACT': {
@@ -65,6 +57,12 @@ function reducer(state, action) {
           title: 'Delete Successful',
           content: `Contact "${email}" has been deleted!`,
         },
+      };
+    }
+    case 'FLASH_MESSAGE': {
+      return {
+        ...state,
+        message: action.payload,
       };
     }
     default:
